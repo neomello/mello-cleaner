@@ -24,7 +24,7 @@ cd flow-cleaner
 
 ```bash
 # Ativar ambiente simbiótico
-make start
+make run
 ```
 
 ---

@@ -79,6 +79,26 @@ delete-backup-apps:
 	@echo "🗑️ Deletando aplicativos do backup definitivamente..."
 	./delete_backup_apps.sh
 
+diagnose-heating:
+	@echo "🌡️ Diagnosticando aquecimento do sistema..."
+	./diagnose_heating.sh
+
+optimize-heating:
+	@echo "🔧 Otimizando sistema para reduzir aquecimento..."
+	./optimize_heating.sh
+
+reduce-transparency:
+	@echo "🎨 Reduzindo transparências do sistema..."
+	./reduce_transparency.sh
+
+optimize-performance:
+	@echo "⚡ Aplicando otimizações de performance..."
+	./optimize_performance.sh
+
+downgrade-guide:
+	@echo "📱 Exibindo guia para reverter versão do macOS..."
+	./downgrade_macos_guide.sh
+
 help:
 	@echo "📋 Comandos disponíveis:"
 	@echo "  setup        - Configura ambiente virtual e instala dependências"
@@ -102,4 +122,11 @@ help:
 	@echo "  remove-apps - Remove aplicativos não utilizados"
 	@echo "  remove-specific-apps - Remove aplicativos específicos"
 	@echo "  delete-backup-apps - Deleta aplicativos do backup definitivamente"
+	@echo ""
+	@echo "🌡️ Comandos de Diagnóstico e Otimização:"
+	@echo "  diagnose-heating - Diagnóstico completo de aquecimento"
+	@echo "  optimize-heating - Recomendações para reduzir aquecimento"
+	@echo "  reduce-transparency - Reduz transparências automaticamente"
+	@echo "  optimize-performance - Aplica otimizações de performance"
+	@echo "  downgrade-guide - Guia para reverter versão do macOS"
 	@echo "  help         - Mostra esta ajuda"
