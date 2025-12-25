@@ -37,9 +37,41 @@ package-lock.json
 # Arquivos sensíveis (não devem ser indexados)
 .env
 .env.local
+.env.*.local
 *.key
 *.pem
 *.secret
+*.cert
+*.p12
+*.pfx
+
+# Blockchain e Web3 - CRÍTICO
+*.mnemonic
+*.seed
+*private-key*
+*wallet.json
+*keystore*
+hardhat.config.js
+truffle-config.js
+foundry.toml
+.chainid
+.network
+
+# Chaves e credenciais específicas
+*_PRIVATE_KEY*
+*_API_KEY*
+*_SECRET*
+*_TOKEN*
+*_PASSWORD*
+*credentials*
+*secrets*
+
+# Arquivos de configuração sensíveis
+config.local.*
+settings.local.*
+*.local.json
+*.local.yaml
+*.local.yml
 
 # Arquivos de configuração local
 .cursor/

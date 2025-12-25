@@ -1,41 +1,71 @@
-# Regras de Proteção NEØ - Estrutura do Projeto
+# Cursor Rules — NEØ Dev Workspace
+
+This workspace follows NEØ development standards with blockchain/Solidity/IA protections.
+These rules are authoritative.
+
+## Critical Rules
+
+- **ALWAYS** add a blank line after any Markdown header.
+- Use 2 spaces for indentation (4 for Python/Solidity).
+- Remove trailing whitespace and add final newline.
+- **NEVER** commit secrets, API keys, or private keys.
+- **NEVER** modify folder structure or rename files without authorization.
+
+## Structure Protection
 
 ⚠️ **ESTRUTURA PROTEGIDA POR ARQUITETURA NEØ**
 
-## Regras Críticas
+- `cleaners/` - Maintain structure
+- `utils/` - Maintain structure
+- `tools/` - Maintain structure
+- `docs/` - Maintain structure
+- `tests/` - Maintain structure
 
-1. **NUNCA modifique pastas, renomeie arquivos ou sugira reorganização estrutural**
-   - A estrutura atual está protegida e deve ser mantida
-   - Apenas mantenha, revise e expanda conteúdo DENTRO dos documentos existentes
+## Security Rules - CRITICAL
 
-2. **Proteção de Arquivos Sensíveis**
-   - Não exponha chaves de API, tokens ou credenciais
-   - Mantenha arquivos de configuração seguros
-   - Não modifique arquivos de build sem autorização
+### Files Never to Commit
 
-3. **Padrões de Código**
-   - Use código funcional sempre que possível
-   - Considere boas práticas de engenharia de software modernas
-   - Foque em performance e escalabilidade
-   - Respostas sempre em português, diretas e objetivas
+- `.env`, `.env.local`, `.env.*.local`
+- `*.key`, `*.pem`, `*.secret`, `*.cert`
+- `*.mnemonic`, `*.seed`, `*keystore*`
+- `*private-key*`, `*wallet.json`
+- `hardhat.config.js`, `truffle-config.js` (if containing secrets)
 
-4. **Estrutura de Pastas Protegida**
-   - `cleaners/` - Mantenha estrutura
-   - `utils/` - Mantenha estrutura
-   - `netlify/` - Mantenha estrutura
-   - `tools/` - Mantenha estrutura
-   - `docs/` - Mantenha estrutura
-   - `tests/` - Mantenha estrutura
+### Blockchain/Solidity/IA Protection
 
-## Resposta Padrão para Violações
+- **Solidity Contracts**: Always backup before modifying
+- **Private Keys**: NEVER store in code or versioned files
+- **Network Configs**: Use `.env.example` as template
+- **AI Models**: Protect large model files and configurations
+- **Deploy Scripts**: Always verify before production execution
 
-Se alguém solicitar algo que viole estas regras, responda:
+## Code Standards
+
+- Use functional code when possible
+- Follow modern software engineering best practices
+- Focus on performance and scalability
+- Responses always in Portuguese, direct and objective
+
+## Backup and Versioning
+
+- Always commit important changes before major modifications
+- Use branches for experiments and tests
+- Maintain history of critical files
+
+## Default Response for Violations
+
+If someone requests something that violates these rules, respond:
 
 > Esta estrutura é protegida por contexto NEØ. Consulte Mellø antes de qualquer modificação.
 
-## Exceções
+## Exceptions
 
-- Correções de bugs dentro de arquivos existentes são permitidas
-- Expansão de funcionalidades dentro de arquivos existentes é permitida
-- Melhorias de código dentro de arquivos existentes são permitidas
+- Bug fixes within existing files are allowed
+- Feature expansion within existing files is allowed
+- Code improvements within existing files are allowed
+
+## References
+
+- Security checklist: `.backup-checklist.md`
+- Security verification: `make check-security`
 

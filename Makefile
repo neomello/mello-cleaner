@@ -103,6 +103,10 @@ manage-updates:
 	@echo "🆙 Gerenciando atualizações do macOS..."
 	./manage_updates.sh
 
+check-security:
+	@echo "🔒 Verificando segurança do repositório..."
+	@./.check-security.sh
+
 help:
 	@echo "📋 Comandos disponíveis:"
 	@echo "  setup        - Configura ambiente virtual e instala dependências"
@@ -134,4 +138,5 @@ help:
 	@echo "  optimize-performance - Aplica otimizações de performance"
 	@echo "  downgrade-guide - Guia para reverter versão do macOS"
 	@echo "  manage-updates - Gerenciar atualizações do macOS (cancelar, limpar, etc)"
+	@echo "  check-security - Verifica segurança do repositório (credenciais, arquivos sensíveis)"
 	@echo "  help         - Mostra esta ajuda"

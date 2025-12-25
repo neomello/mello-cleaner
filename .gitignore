@@ -9,7 +9,7 @@ dist/
 build/
 *.egg-info/
 
-# Arquivos sensíveis e de configuração
+# Arquivos sensíveis e de configuração - CRÍTICO
 .env
 .env.local
 .env.*.local
@@ -17,12 +17,74 @@ build/
 *.pem
 *.secret
 *.cert
+*.p12
+*.pfx
+
+# Blockchain e Web3 - CRÍTICO (NUNCA commitar)
+*.mnemonic
+*.seed
+*private-key*
+*wallet.json
+*keystore*
+hardhat.config.js
+truffle-config.js
+foundry.toml
+.chainid
+.network
+artifacts/
+cache/
+openzeppelin/
+node_modules/
+
+# Chaves e credenciais específicas
+*_PRIVATE_KEY*
+*_API_KEY*
+*_SECRET*
+*_TOKEN*
+*_PASSWORD*
+*credentials*
+*secrets*
+
+# Arquivos de configuração sensíveis
+config.local.*
+settings.local.*
+*.local.json
+*.local.yaml
+*.local.yml
 
 # Arquivos de lock
 deno.lock
 package-lock.json
+yarn.lock
 
 # Logs
 *.log
 erro-final.txt
 build-log.txt
+
+# Arquivos temporários e de backup
+*.tmp
+*.bak
+*.backup
+*~
+.DS_Store
+
+# Arquivos de IA/ML grandes
+*.model
+*.h5
+*.pkl
+*.pt
+*.pth
+*.ckpt
+models/
+checkpoints/
+*.weights
+
+# Arquivos de build e distribuição
+build/
+dist/
+*.egg-info/
+.eggs/
+*.so
+*.dylib
+*.dll
