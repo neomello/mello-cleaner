@@ -38,6 +38,7 @@ make help
 ```
 
 **Principais comandos:**
+
 - `make setup` - Configura ambiente virtual e instala dependências
 - `make run` - Executa o aplicativo
 - `make analyze` - **Análise prévia** (recomendado antes de organizar)
@@ -91,12 +92,14 @@ make optimize-performance
 ```
 
 ### Reverter macOS
+
 ```bash
 # Guia completo para reverter versão do macOS
 make downgrade-guide
 ```
 
 **Otimizações aplicadas:**
+
 - ✅ Redução de transparências
 - ✅ Desativação de animações
 - ✅ Otimização do Dock
@@ -104,6 +107,7 @@ make downgrade-guide
 - ✅ Desativação de Siri (opcional)
 
 **Resultados esperados:**
+
 - Redução de 80-95% no uso de CPU do WindowServer
 - Menor aquecimento do sistema
 - Melhor performance geral
@@ -125,6 +129,7 @@ make analyze
 ```
 
 **O que a análise mostra:**
+
 - 📅 **Arquivos por data** - Os 20 arquivos mais recentes de cada pasta
 - 🔥 **Arquivos grandes** - Arquivos maiores que 10MB
 - 📊 **Análise por tipo** - Contagem por categoria:
@@ -137,6 +142,7 @@ make analyze
   - ⚙️ Arquivos ocultos
 
 **Pastas analisadas:**
+
 - 🖥️ Desktop (19GB)
 - 📥 Downloads (2.3GB)
 - 📄 Documents (541MB)
@@ -163,6 +169,7 @@ make clean-downloads
 ```
 
 **Pastas criadas:**
+
 - `📁 Organizados/Imagens` - Imagens (PNG, JPG, GIF)
 - `📁 Organizados/PDFs` - Documentos PDF
 - `📁 Organizados/Vídeos` - Vídeos (MP4, MOV, AVI)
@@ -171,6 +178,7 @@ make clean-downloads
 - `📁 Para Deletar` - Arquivos muito pequenos (<1KB)
 
 **Após a execução:**
+
 1. ✅ Revise `📁 Antigos (6+ meses)` - pode deletar
 2. ✅ Revise `📁 Para Deletar` - arquivos pequenos
 3. ✅ Mova arquivos importantes para Documents se necessário
@@ -184,6 +192,7 @@ make organize-desktop
 ```
 
 **Pastas criadas:**
+
 - `📁 Arquivos por Tipo/Imagens` - Todas as imagens
 - `📁 Arquivos por Tipo/PDFs` - Documentos PDF
 - `📁 Arquivos por Tipo/Vídeos` - Vídeos

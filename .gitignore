@@ -8,3 +8,21 @@ __pycache__/
 dist/
 build/
 *.egg-info/
+
+# Arquivos sensíveis e de configuração
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.secret
+*.cert
+
+# Arquivos de lock
+deno.lock
+package-lock.json
+
+# Logs
+*.log
+erro-final.txt
+build-log.txt

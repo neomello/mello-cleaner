@@ -99,6 +99,10 @@ downgrade-guide:
 	@echo "📱 Exibindo guia para reverter versão do macOS..."
 	./downgrade_macos_guide.sh
 
+manage-updates:
+	@echo "🆙 Gerenciando atualizações do macOS..."
+	./manage_updates.sh
+
 help:
 	@echo "📋 Comandos disponíveis:"
 	@echo "  setup        - Configura ambiente virtual e instala dependências"
@@ -129,4 +133,5 @@ help:
 	@echo "  reduce-transparency - Reduz transparências automaticamente"
 	@echo "  optimize-performance - Aplica otimizações de performance"
 	@echo "  downgrade-guide - Guia para reverter versão do macOS"
+	@echo "  manage-updates - Gerenciar atualizações do macOS (cancelar, limpar, etc)"
 	@echo "  help         - Mostra esta ajuda"
