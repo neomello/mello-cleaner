@@ -1,0 +1,56 @@
+# Arquivos e pastas que o Cursor deve ignorar
+
+# Ambientes virtuais
+venv/
+venv-sistema/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build e distribuição
+build/
+dist/
+*.egg-info/
+*.app/
+
+# Arquivos do sistema
+.DS_Store
+*.DS_Store
+.python-version
+
+# Logs e temporários
+*.log
+*.tmp
+erro-final.txt
+build-log.txt
+
+# Arquivos de lock (podem ser grandes)
+deno.lock
+package-lock.json
+
+# Arquivos de backup
+*.bak
+*.backup
+*~
+
+# Arquivos sensíveis (não devem ser indexados)
+.env
+.env.local
+*.key
+*.pem
+*.secret
+
+# Arquivos de configuração local
+.cursor/
+.vscode/
+.idea/
+
+# Arquivos grandes ou binários
+*.icns
+*.png
+*.jpg
+*.jpeg
+background.png
+mello-cleanermac-app.png
+

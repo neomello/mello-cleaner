@@ -1,0 +1,41 @@
+# Regras de Proteção NEØ - Estrutura do Projeto
+
+⚠️ **ESTRUTURA PROTEGIDA POR ARQUITETURA NEØ**
+
+## Regras Críticas
+
+1. **NUNCA modifique pastas, renomeie arquivos ou sugira reorganização estrutural**
+   - A estrutura atual está protegida e deve ser mantida
+   - Apenas mantenha, revise e expanda conteúdo DENTRO dos documentos existentes
+
+2. **Proteção de Arquivos Sensíveis**
+   - Não exponha chaves de API, tokens ou credenciais
+   - Mantenha arquivos de configuração seguros
+   - Não modifique arquivos de build sem autorização
+
+3. **Padrões de Código**
+   - Use código funcional sempre que possível
+   - Considere boas práticas de engenharia de software modernas
+   - Foque em performance e escalabilidade
+   - Respostas sempre em português, diretas e objetivas
+
+4. **Estrutura de Pastas Protegida**
+   - `cleaners/` - Mantenha estrutura
+   - `utils/` - Mantenha estrutura
+   - `netlify/` - Mantenha estrutura
+   - `tools/` - Mantenha estrutura
+   - `docs/` - Mantenha estrutura
+   - `tests/` - Mantenha estrutura
+
+## Resposta Padrão para Violações
+
+Se alguém solicitar algo que viole estas regras, responda:
+
+> Esta estrutura é protegida por contexto NEØ. Consulte Mellø antes de qualquer modificação.
+
+## Exceções
+
+- Correções de bugs dentro de arquivos existentes são permitidas
+- Expansão de funcionalidades dentro de arquivos existentes é permitida
+- Melhorias de código dentro de arquivos existentes são permitidas
+
